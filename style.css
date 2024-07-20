@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+}
+
+.main-container, .footer {
+    margin: auto;
+    width: 85vw;
+}
+
+.header, .content {
+    display: flex;
+}
+
+.header {
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 15vh;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1%;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border: none;
+    background-color: yellow;
+    height: 10vh;
+    width: 10vw;
+    box-shadow: 0 0 30px yellow;
+    color: black;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-link, .text-content, .portfolio-button, .footer, .social-link {
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav-link {
+    padding: 0.5% 0.75%;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 0, 1);
+    color: black;
+}
+
+.text-content {
+    margin: 5% 20%;
+    font-size: 1.25em;
+}
+
+.content {
+    height: 70vh;
+    align-items: center;
+    gap: 10%;
+}
+
+.portfolio-button {
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid yellow;
+    height: 7vh;
+    width: 10vw;
+    font-size: 0.75em;
+    box-shadow: 0 0 10px yellow;
+    cursor: pointer;
+}
+
+.portfolio-button:hover {
+    box-shadow: 0 0 20px yellow;
+}
+
+.profile-image {
+    margin: 3% 0 0 20%;
+    border-radius: 38%;
+    box-shadow: 0 0 50px yellow;
+    width: 150px;
+}
+
+.profile-image:hover {
+    box-shadow: 0 0 100px yellow;
+}
+
+.yellow {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+.social-icons {
+    display: block;
+    margin: 5% 0;
+    font-size: 1.5em;
+}
+
+.icon {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon:hover {
+    box-shadow: 0 0 20px #fff;
+}
+
+.footer {
+    text-align: center;
+}
+
+.name-letter {
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+    color: yellow;
+}
+
+.name-letter:hover {
+    text-shadow: 0 0 5px yellow;
+    transform: scale(2);
+    color: #fff;
+}
+
+.job-title {
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #fff;
+}
+
+.social-link:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.image-container {
+    position: relative;
+    right: 7%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .main-container, .footer {
+        width: 90%;
+    }
+
+    .profile-image {
+        width: 130px;
+    }
+
+    .portfolio-button {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem;
+    }
+
+    .text-content {
+        font-size: 1.1em;
+    }
+
+    .profile-image {
+        width: 100px;
+    }
+
+    .portfolio-button {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-content {
+        font-size: 1em;
+        margin: 2% 0;
+    }
+
+    .profile-image {
+        width: 80px;
+    }
+
+    .portfolio-button {
+        width: 25vw;
+    }
+
+    .social-icons {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 1% 0;
+    }
+
+    .nav-link {
+        margin: 0.25rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .text-content {
+        font-size: 0.9em;
+        margin: 2% 0;
+    }
+
+    .profile-image {
+        width: 60px;
+    }
+
+    .portfolio-button {
+        width: 30vw;
+        font-size: 0.65em;
+    }
+
+    .social-icons {
+        font-size: 1em;
+    }
+}
